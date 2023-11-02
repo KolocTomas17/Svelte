@@ -82,6 +82,8 @@ input,
 button {
 	font-size: inherit;
 	font-family: inherit;
+	margin: 5px;
+
 }
 
 button:focus:not(:focus-visible) {
@@ -108,9 +110,17 @@ button:focus:not(:focus-visible) {
 
 box {
 	position: absolute;
-	margin-top: 20px;
+	margin-top: 55px;
 	display: block;
 	word-spacing: 10px;
+}
+
+@media (max-width: 425px) {
+	box {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+	}
 }
 
 box:last-child {
